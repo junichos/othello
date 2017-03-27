@@ -1,0 +1,40 @@
+h1 {
+	text-align: center;
+}
+
+div#game {
+	width:900px; margin:0 auto;
+}
+
+aside#player1 {
+	width: 200px;
+	float: left;	
+	margin:	20px 20px;
+}
+
+aside#player2 {
+	width: 200px;
+	float: left;
+	margin:	20px 20px;
+}
+
+article {
+	float: left;
+}
+
+table#board {
+	border: solid 3px #000000;
+	width: 400px;
+	height: 400px;
+	background-color: green;
+}
+
+td.squares {
+	border: solid 1px #000000;
+	background-repeat: no-repeat;
+}
+
+footer {
+	text-align: center;
+	clear: both;
+}
