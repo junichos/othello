@@ -27,7 +27,7 @@ TODO: テーブルの生成はHTMLでなくここでやる
 			colorTable[$(this).attr("id")] = -1;
 		}
 		if((colorTable[$(this).attr("id")]) < 0){
-			$(this).css("background-image", "url(img/" + colorName[currentTurn] + ".jpg");
+			$(this).css("background-image", "url(img/" + colorName[currentTurn] + ".png");
 		}
 	});
 
@@ -45,7 +45,12 @@ TODO: テーブルの生成はHTMLでなくここでやる
 				setCount();
 			}
 		}
-	})
+	});
+
+	$("#pass").click(function(){
+		currentTurn = (++currentTurn) % 2;
+	});
+
 
 
 	function turnOver(position, currentTurn){
@@ -132,7 +137,7 @@ TODO: テーブルの生成はHTMLでなくここでやる
 
 	function setPiece(position, colorNum) {
 		colorTable[$(position).attr("id")] = colorNum;
-		$(position).css("background-image", "url(img/" + colorName[colorNum] + ".jpg");
+		$(position).css("background-image", "url(img/" + colorName[colorNum] + ".png");
 	}
 
 });

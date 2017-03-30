@@ -3,19 +3,41 @@ h1 {
 }
 
 div#game {
-	width:900px; margin:0 auto;
+	width:800px; margin:0 auto;
 }
 
 aside#player1 {
-	width: 200px;
+	width: 150px;
 	float: left;	
 	margin:	20px 20px;
 }
 
+img#blackImg {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+p#numOfBlack{
+	color: black;
+	font-size: 30px;
+}
+
 aside#player2 {
-	width: 200px;
+	width: 150px;
 	float: left;
 	margin:	20px 20px;
+}
+
+img#whiteImg {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+p#numOfWhite{
+	color: black;
+	font-size: 30px;
 }
 
 article {
@@ -31,7 +53,19 @@ table#board {
 
 td.squares {
 	border: solid 1px #000000;
+	background-size: contain;
 	background-repeat: no-repeat;
+}
+
+div#controls {
+	text-align: center;
+	clear: both;
+}
+
+button#pass {
+	margin: 50px;
+	width : 100px;
+	height: 50px;
 }
 
 footer {
